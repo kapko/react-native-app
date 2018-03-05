@@ -1,8 +1,13 @@
-import { StackNavigator } from 'react-navigation';
+import React, { Component } from "react";
+import { DrawerNavigator } from 'react-navigation';
 import { FeedPage } from '../feed/feed';
 import { DetailPage } from '../detail/detail';
+import { SideBarComponent } from '../pages/sidebar/sidebar';
 
-export default StackNavigator({
+export default DrawerNavigator({
   Feed: { screen: FeedPage },
   Detail: { screen: DetailPage },
-}, {initialRouteName: 'Feed',});
+  SideBar: {screen: SideBarComponent}
+}, {
+  contentComponent: props => <SideBarComponent {...props} />
+});

@@ -5,24 +5,50 @@ import {CardComponent, HeaderComponent} from '../components/index';
 
 const dataImages = [
   {
-    title: "first",
-    src: require('../image/1.jpg')
+    title: "Продаю Квартиру",
+    description: 'Срочно продаю квартиру дешево',
+    price: '100 000',
+    currency: '$',
+    src: require('../image/1.jpg'),
+    adress: '7 микркрорайон',
+    floor: 6,
+    floorOf: 12,
+    typeOfRoom: '2х ком.',
+    typeSeller: 'Владелец',
+    situatited: 'Южный микрорайон',
+    squeire: '120',
   },
-  {
-    title: "second",
-    src: require('../image/2.jpg')
-  },
-  {
-    title: "third",
-    src: require('../image/3.jpg')
-  }
+  // {
+  //   title: "Продаю Квартиру",
+  //   description: 'Срочно продаю квартиру дешево',
+  //   price: '100 000',
+  //   currency: '$',
+  //   src: require('../image/2.jpg'),
+  //   adress: '7 микркрорайон',
+  //   floor: 6,
+  //   floorOf: 12,
+  //   typeOfRoom: '3х ком.',
+  //   typeSeller: 'Агент'
+  // },
+  // {
+  //   title: "Продаю Квартиру",
+  //   description: 'Срочно продаю квартиру дешево',
+  //   price: '100 000',
+  //   currency: '$',
+  //   src: require('../image/3.jpg'),
+  //   adress: '7 микркрорайон',
+  //   floor: 6,
+  //   floorOf: 12,
+  //   typeOfRoom: '4х ком.',
+  //   typeSeller: 'Владелец'
+  // },
 ]
 
 export class FeedPage extends React.Component {
   render() {
     return (
       <Container>
-        <HeaderComponent title="Feed"/>
+        <HeaderComponent title="Feed" nav={this.props.navigation}/>
         <Content>
           <CardComponent data={dataImages}/>
         </Content>
