@@ -30,7 +30,7 @@ const dataImages = [
     floorOf: 12,
     situatited: 'Кок Жар',
     typeOfRoom: '3х ком.',
-    typeSeller: 'АН',
+    typeSeller: 'Ан',
     squeire: '200',
     room: 3,
   },

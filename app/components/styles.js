@@ -13,10 +13,9 @@ export default styles = StyleSheet.create({
     paddingRight: 5,
     // paddingTop: 3,
   },
-  cardIconFooterLeft: {
-    fontSize: 25,
+  typeSellerIcon: {
+    fontSize: 14,
     paddingRight: 5,
-    paddingTop: 3,
   },
   cardButton: {
     paddingTop: 0,
@@ -26,15 +25,33 @@ export default styles = StyleSheet.create({
   cartHeader: {
     borderBottomColor: '#dfdfdf',
     borderBottomWidth: 1,
-  },
-  cartFooter: {
+    paddingBottom: 0,
     paddingTop: 0,
-    marginTop: -5,
-    // borderTopColor: '#dfdfdf',
-    // borderTopWidth: 1,
   },
   cardText: {
     paddingLeft: 0,
     color: '#333'
-  }
+  },
+  // slider
+  slider: {
+    height: 200, 
+    width: null, 
+    flex: 1
+  },
+  typeSellerText: {
+    fontSize: 17,
+    color: '#333',
+    paddingLeft: 0
+  },
+  // footer
+  cartFooter: {
+    paddingTop: 0,
+    marginTop: -5,
+    paddingBottom: 0,
+    paddingTop: 0,
+  },
+  cardIconFooterLeft: {
+    fontSize: 18,
+    marginLeft: -3,
+  },
 });
