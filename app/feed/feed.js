@@ -17,6 +17,7 @@ const dataImages = [
     typeSeller: 'Владелец',
     situatited: 'Южный микрорайон',
     squeire: '120',
+    id: 1131231233,
     room: 2,
   },
   {
@@ -32,6 +33,7 @@ const dataImages = [
     typeOfRoom: '3х ком.',
     typeSeller: 'Ан',
     squeire: '200',
+    id: 11231233,
     room: 3,
   },
   {
@@ -47,6 +49,7 @@ const dataImages = [
     typeOfRoom: '4х ком.',
     typeSeller: 'Владелец',
     squeire: '160',
+    id: 123,
     room: 2,
   },
 ]
@@ -55,9 +58,9 @@ export class FeedPage extends React.Component {
   render() {
     return (
       <Container>
-        <HeaderComponent title="Feed" nav={this.props.navigation}/>
+        <HeaderComponent title="Feed"/>
         <Content>
-          <CardComponent data={dataImages}/>
+          <CardComponent data={dataImages} navigation={this.props.navigation}/>
         </Content>
       </Container>
     );

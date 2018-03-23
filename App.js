@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from './app/router/router';
+import DrawerNavigator from './app/router/router';
  
 import Icon from './node_modules/react-native-vector-icons/dist/FontAwesome';
 // Generate required css
@@ -8,7 +8,6 @@ const iconFontStyles = `@font-face {
   src: url(${iconFont});
   font-family: FontAwesome;
 }`;
-
 
 export default class App extends React.Component {
   state={
@@ -40,6 +39,6 @@ export default class App extends React.Component {
     if (!this.state.isReady) {
       return <Expo.AppLoading />;
     }
-    return <Router />;
+    return <DrawerNavigator />;
   }
 }
